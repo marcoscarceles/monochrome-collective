@@ -5,9 +5,11 @@ description: "Monochrome Collective, Pop Up Store in  Camden Collective, London"
 baseurl: ""
 url: "http://yourdomain.com"
 
-# Build settings
-#markdown: kramdown
-permalink: pretty
+collections:
+  designers:
+    output: true
 
-exclude: ['config.ru', 'Gemfile', 'Gemfile.lock', 'vendor']
+# Build settings
+markdown: kramdown
+permalink: pretty
 

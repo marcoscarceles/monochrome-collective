@@ -41,16 +41,62 @@
   </head>
   <body>
 
+    <div id="fb-root"></div>
 
 	{% include carousel/navbar.html %}
 
-  {% include carousel/carousel.html %}
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel">
+      <div class="carousel-inner">
+        <div class="item active row text-center">
+          <img src="{{ "/img/design/" | append: page.bannerImage | prepend: site.baseurl }}" alt="{{ page.name }}">
+        </div>
+      </div>
+    </div><!-- /.carousel -->
+
+  <div class="row">
+  </div>
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
   <div class="container marketing">
-    {{content}}
+
+
+    <div class="row">
+        <div class="col-md-3">
+          <img class="img-responsive" src="{{ "/img/design/" | append: page.designImage | prepend: site.baseurl }}" alt="{{ page.name }}">
+        </div>
+        <div class="col-md-9">
+          <h1>{{ page.name }}</h1>
+
+          <div class="social-media">
+            {% if page.twitterHandle %}
+            <a href="https://twitter.com/{{ page.twitterHandle }}" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @{{ page.twitterHandle }}</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            {% endif %}
+
+            {% if page.facebookPage %}
+            <div class="fb-follow" data-href="{{ page.facebookPage }}" data-colorscheme="light" data-layout="button" data-show-faces="true"></div>
+            <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
+
+            {% endif %}
+
+          </div>
+
+          <h2>{{ page.teaserText }}</h2>
+
+          {{ content }}
+        </div>
   </div>
 
   {% include carousel/footer.html %}

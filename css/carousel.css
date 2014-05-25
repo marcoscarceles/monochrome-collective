@@ -38,7 +38,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 360px;
-  margin-bottom: 60px;
+  /*margin-bottom: 60px;*/
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -93,6 +93,10 @@ body {
   letter-spacing: -1px;
 }
 
+.featurette-image {
+  margin: 0 auto;
+}
+
 
 
 /* RESPONSIVE CSS
@@ -140,8 +144,17 @@ body {
   }
 }
 
+/*
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 120px;
   }
 }
+*/
+
+@media (max-width: 768px) {
+  .carousel {
+    margin-top: 50px;
+  }
+}
+

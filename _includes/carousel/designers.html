@@ -1,0 +1,12 @@
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        {% for designer in site.designers %}
+          <div class="col-lg-4">
+            <a href="{{ designer.url | remove:'index.html' }}">
+              <img class="img-circle" src="{{ "/img/headshot/" | append: designer.teaserImage | prepend: site.baseurl }}" alt="{{ designer.name }}">
+              <h2>{{ designer.name }}</h2>
+            </a>
+            <p>{{ designer.teaserText }}</p>
+          </div><!-- /.col-lg-4 -->
+        {% endfor %}
+      </div><!-- /.row -->

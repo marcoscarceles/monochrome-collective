@@ -10,3 +10,25 @@
 .social-media > * {
 	vertical-align: middle; 
 }
+
+.designer-image {
+	margin: 20px auto;
+}
+
+.issuuembed {
+	width: 100% !important;
+	height: 460px !important;
+}
+
+
+@media (max-width: 767px) {
+  .issuuembed {
+    height: 371px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .issuuembed {
+    height: 460px !important;
+  }
+}

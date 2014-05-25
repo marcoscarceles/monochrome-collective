@@ -45,30 +45,20 @@
 
 	{% include carousel/navbar.html %}
 
-
-
-    <!-- Carousel
-    ================================================== -->
-    <div id="myCarousel" class="carousel">
-      <div class="carousel-inner">
-        <div class="item active row text-center">
-          <img src="{{ "/img/design/" | append: page.bannerImage | prepend: site.baseurl }}" alt="{{ page.name }}">
-        </div>
-      </div>
-    </div><!-- /.carousel -->
-
-  <div class="row">
-  </div>
+  <div class="carousel-inner">
+    <div class="item row active">
+      <img src="{{ "/img/design/" | append: page.bannerImage | prepend: site.baseurl }}" alt="{{ page.name }}">
+    </div>
+  </div><!-- /.carousel -->
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
   <div class="container marketing">
 
-
     <div class="row">
         <div class="col-md-3">
-          <img class="img-responsive" src="{{ "/img/design/" | append: page.designImage | prepend: site.baseurl }}" alt="{{ page.name }}">
+          <img class="img-responsive designer-image" src="{{ "/img/design/" | append: page.designImage | prepend: site.baseurl }}" alt="{{ page.name }}">
         </div>
         <div class="col-md-9">
           <h1>{{ page.name }}</h1>

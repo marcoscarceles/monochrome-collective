@@ -20,24 +20,10 @@ bannerImage: "arantxa-design-1080x360.jpg"
 designImage: "arantxa-design-360x840.jpg"
 
 # Your Twitter Account: DO NOT INCLUDE THE @ SIMBOL
-twitterHandle: "Arantxafashion"
+twitterHandle: "malinhnilsson"
 
 # Your Facebook Page: Complete URL
-facebookPage: "https://www.facebook.com/arantxamorcillodesigner"
-
----
-
----
-name: "Malin H. Nilsson"
-from: "Sweden"
-
-#Must be 140x140px
-teaserImage: "malin-140x140.jpg"
-
-#MAXIMUM 150 characters
-teaser: "The spaniard designer surprises us with designs that combine culture, heritage and all-but-convential designs"
-
-design-image:
+facebookPage: "https://www.facebook.com/amj.nilsson"
 
 ---
 
@@ -47,3 +33,4 @@ Look, just because I don't be givin' no man a foot massage don't make it right f
 
 Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
 
+<div data-configid="0/7996223" style="width: 650px; height: 460px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>

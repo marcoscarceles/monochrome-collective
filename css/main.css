@@ -8,6 +8,7 @@
 }
 
 .social-media > * {
+  margin-top:8px;
 	vertical-align: middle; 
 }
 
@@ -24,6 +25,10 @@
 @media (max-width: 767px) {
   .issuuembed {
     height: 371px !important;
+  }
+
+  .designer-image {
+    display:none;
   }
 }
 

@@ -41,16 +41,59 @@
   </head>
   <body itemscope itemtype="http://schema.org/Organization">
 
+    <div id="fb-root"></div>
 
 	{% include carousel/navbar.html %}
 
-  {% include carousel/carousel.html %}
+  <div class="carousel-inner">
+    <div class="item row active">
+      <img src="{{ "/img/design/" | append: page.bannerImage | prepend: site.baseurl }}" alt="{{ page.name }}">
+    </div>
+  </div><!-- /.carousel -->
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
   <div class="container marketing">
-    {{content}}
+
+    <div class="row">
+        <div class="col-sm-3">
+          <img class="img-responsive designer-image" src="{{ "/img/event-page-side.jpg" | prepend: site.baseurl }}" alt="{{ page.name }}">
+        </div>
+        <div class="col-sm-9">
+          <img style="padding:20px; display:inline-block" class="img-circle" src="{{ "/img/headshot/" | append: page.teaserImage | prepend: site.baseurl }}" alt="{{ designer.name }}">
+
+          <div style="display:inline-block">
+            <h1>{{ page.name }}</h1>
+            <span>Coming from: {{page.from}}</span>
+
+            <div class="social-media">
+              {% if page.twitterHandle %}
+              <a href="https://twitter.com/{{ page.twitterHandle }}" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @{{ page.twitterHandle }}</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              {% endif %}
+
+              {% if page.facebookPage %}
+              <div class="fb-follow" data-href="{{ page.facebookPage }}" data-colorscheme="light" data-layout="button" data-show-faces="true"></div>
+              <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s); js.id = id;
+                js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+              }(document, 'script', 'facebook-jssdk'));</script>
+
+              {% endif %}
+
+            </div>
+
+          </div>
+          <div style="float:none; clear: both;"></div>
+
+          <h2>{{ page.teaserText }}</h2>
+
+          {{ content }}
+        </div>
   </div>
 
   {% include carousel/footer.html %}

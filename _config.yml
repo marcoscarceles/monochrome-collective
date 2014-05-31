@@ -1,14 +1,15 @@
 # Site settings
 title: "Monochrome Collective"
-email: "your-email@domain.com"
+email: "contactus@monochrome-collective.com"
+phone: "+44 798 459 1105"
 description: "Monochrome Collective, Pop Up Store in  Camden Collective, London"
 baseurl: ""
-url: "http://yourdomain.com"
+url: "http://www.monochrome-collective.com"
 
 collections:
   designers:
-    output: true
+    output: "true"
 
 # Build settings
-markdown: kramdown
-permalink: pretty
+markdown: "kramdown"
+permalink: "pretty"

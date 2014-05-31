@@ -1,6 +1,40 @@
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        {% for designer in site.designers %}
+      {% for designer in site.designers %}
+
+        {% capture thecycle %}{% cycle 'one', 'two', 'three' %}{% endcapture %}
+
+        {% if thecycle == 'one' and forloop.index == forloop.length %}
+          {% assign rowType = 'full' %}
+          <!-- <p style="color:red">FULL {{ thecycle }} {{forloop.index}} == {{forloop.length}}</p> -->
+
+
+        {% elsif thecycle == 'one' and forloop.index == forloop.length-1 %}
+          {% assign rowType = 'double' %}
+          <!-- <p style="color:red">DOUBLE {{ thecycle }} {{forloop.index}} == {{forloop.length-1}}</p> -->
+
+
+        {% elsif thecycle == 'two' and forloop.index == forloop.length %}
+          {% assign rowType = 'double' %}
+          <!-- <p style="color:red">DOUBLE {{ theycycle }} {{forloop.index}} == {{forloop.length}}</p> -->
+
+        {% else %}
+
+          {% assign rowType = 'normal' %}
+          <!-- <p style="color:red">NORMAL {{ theycycle }} {{forloop.index}} == {{forloop.length}}</p> -->
+
+        {% endif %}
+
+
+        {% if thecycle == 'one' %}
+          <div class="row">
+          {% if rowType == 'double' %}
+            <div class="col-lg-2"></div>
+          {% endif %}
+          {% if rowType == 'full' %}
+            <div class="col-lg-4"></div>
+          {% endif %}
+        {% endif %}
+
           <div class="col-lg-4">
             <a href="{{ designer.url | remove:'index.html' }}">
               <img class="img-circle" src="{{ "/img/headshot/" | append: designer.teaserImage | prepend: site.baseurl }}" alt="{{ designer.name }}">
@@ -8,5 +42,20 @@
             </a>
             <p>{{ designer.teaserText }}</p>
           </div><!-- /.col-lg-4 -->
+
+
+          {% if thecycle == 'three' %}
+              </div><!-- /.row -->
+          {% endif %}
+
+          {% if rowType == 'double' and thecycle == 'two' %}
+            <div class="col-lg-2"></div>
+            </div><!-- /.row -->
+          {% endif %}
+          {% if rowType == 'full' %}
+            <div class="col-lg-4"></div>
+            </div><!-- /.row -->
+          {% endif %}
+
+
         {% endfor %}
-      </div><!-- /.row -->

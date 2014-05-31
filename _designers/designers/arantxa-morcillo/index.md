@@ -35,5 +35,5 @@ During January-February 2013, she worked with Conchita Perez designer in the dev
 
 In 2014 she graduate in BA fashion design by Heriot Watt University in collaboration with West london college, with “Splintered”  a collection that explore  the imperfection outside and inside the human body,  transmitting a experimental and deeply intimate aesthetic.
 
-<div data-configid="0/7995340" style="width: 525px; height: 371px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
+<div data-configid="10256387/8033668" style="width: 400px; height: 300px;" class="issuuembed"></div><script type="text/javascript" src="//e.issuu.com/embed.js" async="true"></script>
 

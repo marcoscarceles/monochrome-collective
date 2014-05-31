@@ -30,6 +30,10 @@
   .designer-image {
     display:none;
   }
+
+  .navbar-brand {
+    max-width:50%;
+  }
 }
 
 @media (min-width: 768px) {

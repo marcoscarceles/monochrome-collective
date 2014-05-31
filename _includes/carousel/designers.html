@@ -3,24 +3,17 @@
 
         {% capture thecycle %}{% cycle 'one', 'two', 'three' %}{% endcapture %}
 
-        {% if thecycle == 'one' and forloop.index == forloop.length %}
+        {% if thecycle == 'one' and forloop.rindex == 1 %}
           {% assign rowType = 'full' %}
-          <!-- <p style="color:red">FULL {{ thecycle }} {{forloop.index}} == {{forloop.length}}</p> -->
 
-
-        {% elsif thecycle == 'one' and forloop.index == forloop.length-1 %}
+        {% elsif thecycle == 'one' and forloop.rindex == 2 %}
           {% assign rowType = 'double' %}
-          <!-- <p style="color:red">DOUBLE {{ thecycle }} {{forloop.index}} == {{forloop.length-1}}</p> -->
 
-
-        {% elsif thecycle == 'two' and forloop.index == forloop.length %}
+        {% elsif thecycle == 'two' and forloop.rindex == 1 %}
           {% assign rowType = 'double' %}
-          <!-- <p style="color:red">DOUBLE {{ theycycle }} {{forloop.index}} == {{forloop.length}}</p> -->
 
         {% else %}
-
           {% assign rowType = 'normal' %}
-          <!-- <p style="color:red">NORMAL {{ theycycle }} {{forloop.index}} == {{forloop.length}}</p> -->
 
         {% endif %}
 

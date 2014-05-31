@@ -11,7 +11,7 @@ from: "China"
 teaserImage: "ophelia-140x140.jpg"
 
 # Intro: Describe yourself in maximum 150 characters
-teaserText: ""
+teaserText: "Ophelia aims to catch the eye of fashionista's who are not afraid to stand out from the crowd but in stead lead the way with her unique style."
 
 # Top banner: Must be 1080px x 360px
 bannerImage: "ophelia-design-1080x360.jpg"
@@ -27,7 +27,7 @@ facebookPage: ""
 
 ---
 
-Born in China,Ophelia moved to london to pursue a BA in fashion design at Heriot Watt University in collaboration with West london college. She likes to discover complex pattern cutting and an individual point view in beauty and fashion. Most of her works are strongly structured, and well balanced in terms of different colours and textures. 
+Born in China, Ophelia moved to london to pursue a BA in fashion design at Heriot Watt University in collaboration with West london college. She likes to discover complex pattern cutting and an individual point view in beauty and fashion. Most of her works are strongly structured, and well balanced in terms of different colours and textures. 
 
 Her final collection is imprinted with sharp silhouettes and clear-cut and crisp. She get inspired by Chinese fan which reminder her about how to apply lines into Collection.  It shows the beauty of applying the pleats and lines on fashion as details or texture.  
 
